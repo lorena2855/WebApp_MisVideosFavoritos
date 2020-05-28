@@ -1,6 +1,7 @@
 # WebApp_MisVideosFavoritos
 Desarrollado con el modelo MVC (Modelo – Vista - Controlador) el cual es generalmente usado para el desarrollo web,
 generando así una pagina segura, con respuesta rápida al cliente y sobre todo estructurada (A nivel de desarrollo)
+
 •	Utilizando el framework de JavaScript NodeJs y un servicio de Base de datos en la nube llamada remotemysql y un 
 servicio web de hosting gratuito llamado now para hacer testing a paginas en desarrollo.
 •	En la página principal del usuario registrado se mostrarán los videos agregados por él y demás usuarios. Junto 
