@@ -1,0 +1,623 @@
+<!--<!DOCTYPE html>
+<html lang="es">
+
+<head>
+           <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página Principal | YouTube</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor active" id="contenedor">
+        <header class="header">
+            <div class="contenedor-logo">
+                <button id="boton-menu" class="boton-menu"></button>
+                <a href="#" class="logo" style="color:white;"><i class="fas fa-search"></i> <span>Busqueda.</span></a>
+            </div>
+
+            <div class="barra-busqueda">
+                              <input id="formulario" type="text" class="form-control my-2" placeholder="Busca un video..."
+                    onkeyup="search()" />
+            </div>
+        </header>
+
+        <main class="main">
+            <h2 class="titulo" style="color: white;">Videos Recomendados</h2>
+
+            <div class="grid-videos">
+            </div>
+-->
+            <!--  -->
+<!--<style type="text/css">
+#global {
+	height: 400px;
+	width: 100%;;
+	overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.texto {
+	padding:4px;
+	background:#fff;
+}
+</style>
+<div id="global">
+  <div id="mensajes">
+            <div id="datos" class="row">
+
+                {{#each data}}
+                <div class="col-sm-4">
+
+                    <div class="container text-center my-auto">
+                        <input value="{{id}}" class="video">
+
+                        <a style="text-decoration: none;" href="/detail/{{id}}">
+
+
+                            <div>
+                                <iframe width="347" height="210" src="{{url}}" frameborder="0"
+                                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <h3 id="titulos" class="card-title text-uppercase">
+                                {{name}}
+                            </h3>
+                        </a>
+                        </a>
+
+                        <input value="{{voto}}" class="votos">
+
+                        <p>
+                            <label id="r1{{id}}">★</label>
+                            <label id="r2{{id}}">★</label>
+                            <label id="r3{{id}}">★</label>
+                            <label id="r4{{id}}">★</label>
+                            <label id="r5{{id}}">★</label>
+                            <label>{{voto}}/5 </label>
+
+                        </p><br>
+                    </div>
+                </div>
+
+                {{/each}}
+            </div>
+
+  </div>
+</div>-->
+
+            <!--|    -->
+      <!--  </main>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row bg-dark text-white p-5 text-center">
+            <div class="col-sm-3">
+            </div>
+
+            <div class="col-sm-6">
+                <h3>Youtube, Vimeo y más</h3>
+                <p>
+                    <span>Disfruta de tus videos favoritos de diversas plataformas de video!</span>
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        function calificarIndex() {
+            var videos = document.getElementsByClassName("video");
+            var votos = document.getElementsByClassName("votos");
+            var prom = 0;
+            for (var i = 0; i < videos.length; i++) {
+                var ident = videos[i].value;
+                var radio1 = document.getElementById("r1" + ident);
+                var radio2 = document.getElementById("r2" + ident);
+                var radio3 = document.getElementById("r3" + ident);
+                var radio4 = document.getElementById("r4" + ident);
+                var radio5 = document.getElementById("r5" + ident);
+
+                prom = votos[i].value;
+                for (var j = 0; j <= prom; j++) {
+                    console.log(prom);
+                    switch (j) {
+                        case 1:
+                            radio1.style = "color: orange";
+                            break;
+                        case 2:
+                            radio2.style = "color: orange";
+                            break;
+                        case 3:
+                            radio3.style = "color: orange";
+                            break;
+                        case 4:
+                            radio4.style = "color: orange";
+                            break;
+                        case 5:
+                            radio5.style = "color: orange";
+                            break;
+                        default:
+                            console.log("no funciona");
+                    }
+                }
+            }
+        };
+        window.onload = calificarIndex;
+
+    </script>
+    
+
+        <script type="text/javascript">
+        function search() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("formulario");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("datos");
+            li = ul.getElementsByClassName("col-sm-4");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "block";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--AQUÍ SE VAN A MOSTRAR TODODS LOS VIDEOS DE LOS USERS SIN NECESIDAD DE LOGUEARSE-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Informing Education Category Bootstrap Responsive Template | Home :: W3layouts</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Informing Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+   
+</head>
+
+<body>
+    <!-- mian-content -->
+    <div class="main-content" id="home">
+        <div class="layer">
+            <!-- header -->
+            <header>
+                <div class="container-fluid px-lg-5">
+                    <div class="row order-info">
+                    <div class="middle mt-sm-3 col-sm-6 text-left">
+                       <!-- <ul class="social mb-3">
+                            <li><a href="#"><span class="fa fa-facebook icon_facebook"></span></a></li>
+                            <li><a href="#"><span class="fa fa-twitter icon_twitter"></span></a></li>
+                            <li><a href="#"><span class="fa fa-google-plus icon_google-plus"></span></a></li>
+                            <li><a href="#"><span class="fa fa-linkedin icon_linkedin"></span></a></li>
+                            <li><a href="#"><span class="fa fa-dribbble icon_dribbble"></span></a></li>
+                        </ul>
+-->
+                    </div>
+                    <div class="middle-right mt-sm-3 col-sm-6 text-right">
+                        <h6><span class="fa fa-phone"></span> Paola Baños/Pablo Funes</h6>
+                    </div>
+                </div>
+
+                </div>
+            </header>
+            <!-- //header -->
+            <div class="container">
+                <!-- /banner -->
+                <div class="banner-info-w3layouts text-center">
+                    <h3>Disfruta del mejor contenido en videos</h3>
+                    <div class="read-more">
+                        <a href="/signin" class="read-more scroll">Iniciar Sesion </a> </div>
+                </div>
+                
+            </div>
+            <!-- //banner -->
+        </div>
+    </div>
+<!-- testimonials -->
+
+<!-- contact -->
+    <!-- <div class="contact" id="contact">
+    <div class="container">
+        <div class="w3ls-heading">
+            <h3>Contact me</h3>
+        </div>
+           
+
+            </div>  
+
+    </div>
+</div>-->
+<!-- //contact -->
+
+
+<!-- main-content -->
+
+ <!--  -->
+   <div class="fondoxd">
+<br>
+<br>
+<section> 
+
+            <div class="container">
+       <div class="gallery_gds">
+           <ul class="simplefilter ">
+            <!--  
+             <li class="active" data-filter="all">Todo</li>
+                -->
+                <li data-filter="1" onclick="searchY()">Youtube</li>
+                <li data-filter="1" onclick="searchD()">DailyMotion</li>
+                <li data-filter="1" onclick="searchV()">Vimeo</li>
+                <li data-filter="1" onclick="searchM()">Metacafe</li>
+           
+            </ul>   
+       <div class="container mt-5"> 
+        <div class="w-50"> 
+       <input id="formulario" type="text" class="form-control my-22"  placeholder="Busca un video..." onkeyup="search()"/>
+        </div>
+    </div>
+
+  
+<style type="text/css">
+#global {
+    height: 400px;
+    width: 100%;;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.texto {
+    padding:4px;
+    background:#fff;
+}
+</style>
+
+<div id="global">
+  <div id="mensajes">
+          
+
+    <div class="main-content1">
+        <!-- gallery -->
+    <div class="gallery" id="projects">
+        <div class="w3-gallery-head">
+            <h3>Lo Mejor En Videos</h3>
+        </div>
+    <div class="container">
+        <div class="gallery_gds">
+            <div class="filtr-container " style="padding: 0px; position: relative; height: 858px;">
+                <div class="col-md-4 col-ms-6 jm-item first filtr-item" data-category="1, 5" data-sort="Busy streets" style="opacity: 1; transform: scale(1) translate3d(0px, 0px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-out 0ms;">
+                    <div class="jm-item-wrapper">
+                        <div class="jm-item-image"></span>
+                            <div class="jm-item-button"><a href="#"  data-toggle="modal" data-target="#myModal1">View Details</a></div>
+                        </div>  
+                        
+                    </div>
+                </div>
+
+<!-- gallery -->
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+
+            <h5 class="main-w3l-title mb-sm-4 mb-3">.</h5>
+        </div>
+        <div class="container-fluid">
+
+            <div class="agileinfo-gallery row">
+                <div class="col-lg-3 col-6 w3-agileits-gallery-grids mb-lg-0 mb-4">
+                    <!--<a href="images/g1.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut metus sit amet magna vehicula eleifend in in urna.">-->
+
+
+ 
+
+
+                                     {{#each data}}
+                <a style="text-decoration: none;" href="/detail/{{id}}">
+                    <input value="{{id}}" class="videos">
+
+
+                     <iframe width="347" height="210" src="{{url}}" frameborder="0"
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        
+
+                       <!-- <img src="images/g1.jpg" class="img-fluid" alt="Responsive image">-->
+                        
+                        <div class="agile-b-wrapper">
+                            <h5>                            {{name}}
+</h5>
+
+
+
+
+
+
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6 w3-agileits-gallery-grids mb-lg-0 mb-4">
+                  <!--  <a href="images/g2.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut metus sit amet magna vehicula eleifend in in urna.">
+                        <img src="images/g2.jpg" class="img-fluid" alt="Responsive image">-->
+                        <div class="agile-b-wrapper">
+                            
+
+                            <h5>Gleam11</h5>
+                        </div>
+                    </a>
+
+
+                {{/each}}
+            </div>
+
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--// gallery -->
+
+
+
+    <!--// gallery -->
+</div>
+</div>
+</div>
+
+
+
+</div>
+</section>
+
+
+<section class="testi py-5" id="testimonials">
+    <div class="container pb-xl-5 py-lg-3">
+        <h3 class="tittle two text-center heading mb-5">CONTACTOS</h3>
+        <div class="row">
+        <div class="row inner-sec-w3layouts-w3pvt-lauinfo">
+            <div class="col-md-4 col-sm-6">
+                <div class="team-grids text-center">
+                    <a href="https://www.facebook.com/profile.php?id=100014711794350" >
+                    <img src="images/pablo.jpg" class="img-fluid" alt="">
+                   <!-- <div class="social-icons-section">
+                        <a class="fac" href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a class="twitter" href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="google" href="#">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>-->
+                    <div class="clearfix"></div>
+                    <div class="team-info">
+                        <div class="caption">
+                            <h4>Pablo</h4>
+                            <h6>Funes</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+<!--
+            <div class="col-lg-6">
+                <div class="row testi-cgrid border-right-grid">
+                    <div class="col-sm-4 testi-icon mb-sm-0 mb-3">
+                        <img src="images/pablo.jpg" alt="" class="img-fluid"/>
+                    </div>
+                    <div class="col-sm-8">
+                        <p class="mx-auto"><span class="fa fa-quote-left"></span> Onec consequat sapien utleo dolor rhoncus. Nullam dui mi, vulputater act metus semper. Vestibulum sed dolor.</p>
+                        <h6 class="b-w3ltxt mt-3">Smith - <span>Ipsum</span></h6>
+                    </div>
+                </div>
+            </div>-->
+
+
+            <div class="col-md-4 col-sm-6 mt-sm-0 mt-5">
+                <div class="team-grids text-center">
+                    <a href="https://www.facebook.com/paola.banos.7902" >
+                    <img src="images/pao.jpg" class="img-fluid" alt="">
+
+                  <!--  <div class="social-icons-section">
+                        <a class="fac" href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+
+                        <a class="twitter" href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="google" href="#">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>-->
+                    <div class="clearfix"></div>
+                    <div class="team-info">
+                        <div class="caption">
+                            <h4>Paola</h4>
+                            <h6>Baños</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- team -->
+
+          <!--  <div class="col-lg-6 mt-lg-0 mt-sm-5 mt-4">
+                <div class="row testi-cgrid border-left-grid">
+                    <div class="col-sm-4 testi-icon mb-sm-0 mb-3">
+                        <img src="images/pao.jpg" alt="" class="img-fluid"/>
+                    </div>
+                    <div class="col-sm-8">
+                        <p class="mx-auto"><span class="fa fa-quote-left"></span> Onec consequat sapien utleo dolor rhoncus. Nullam dui mi, vulputater act metus semper. Vestibulum sed dolor.</p>
+                        <h6 class="b-w3ltxt mt-3">Warner - <span>Lorem</span></h6>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+function search() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("formulario");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("gallery");
+  li = ul.getElementsByClassName("col-lg-3 col-6 w3-agileits-gallery-grids mb-lg-0 mb-4");
+  for (i = 0; i < li.length; i++) {
+  a = li[i].getElementsByTagName("a")[0];
+  if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+  li[i].style.display = "block";
+  } else {
+  li[i].style.display = "none";
+  }
+ }
+}
+
+</script>
+
+<script type="text/javascript">
+        youtube = document.getElementById("youtube");
+        metacafe = document.getElementById("metacafe");
+        vimeo = document.getElementById("vimeo");
+        daily = document.getElementById("dailymotion");
+
+    function searchY() {
+        var  filter, ul, li, a, i;
+        filter = "YOUTUBE";
+        ul = document.getElementById("gallery");
+        li = ul.getElementsByClassName("col-lg-3 col-6 w3-agileits-gallery-grids mb-lg-0 mb-4");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "block";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    };
+    function searchM() {
+        var  filter, ul, li, a, i;
+        filter = "METACAFE";
+        ul = document.getElementById("gallery");
+        li = ul.getElementsByClassName("col-lg-3 col-6 w3-agileits-gallery-grids mb-lg-0 mb-4");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "block";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    };
+    function searchV() {
+        var  filter, ul, li, a, i;
+        filter = "VIMEO";
+        ul = document.getElementById("gallery");
+        li = ul.getElementsByClassName("col-lg-3 col-6 w3-agileits-gallery-grids mb-lg-0 mb-4");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "block";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    };
+
+       function searchD() {
+        var  filter, ul, li, a, i;
+        filter = "DAILYMOTION";
+        ul = document.getElementById("gallery");
+        li = ul.getElementsByClassName("col-lg-3 col-6 w3-agileits-gallery-grids mb-lg-0 mb-4");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "block";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    };
+
+</script>
