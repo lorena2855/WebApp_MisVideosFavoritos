@@ -25,6 +25,9 @@ se podrán cambiar, una vez finalizado se da click al botón de guardar.
 
 •	Para eliminar se necesitará una confirmación del usuario.
 
+# Trabajo realizado por:
+#*Castrejon Funes Juan Pablo.
+#*Baños Servin Paola Lorena.
 •	Permite el registrar nuevos usuarios. Capturando algunos datos esenciales para poder registrarse.
 
 •	ningún usuario que este en la página podrá subir, guardar o modificar, editar o borrar videos sin antes haber iniciado sesión,
@@ -36,3 +39,5 @@ solo podrá ver los videos que ha subido otros usuarios.
 enseguida esta manda un mensaje de confirmación de datos antes de almacenar el video en el perfil del usuario.
 
 •	Solo los usuarios registrados pueden calificar un vídeo; después de esto se genera un promedio de calificación.
+
+
