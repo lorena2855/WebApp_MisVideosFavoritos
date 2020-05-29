@@ -1,4 +1,4 @@
-#WebApp_MisVideosFavoritos
+*WebApp_MisVideosFavoritos*
 
 Desarrollado con el modelo MVC (Modelo – Vista - Controlador) el cual es generalmente usado para el desarrollo web, generando así una pagina segura, con respuesta rápida al cliente y sobre todo estructurada (A nivel de desarrollo)
 
@@ -28,5 +28,5 @@ Desarrollado con el modelo MVC (Modelo – Vista - Controlador) el cual es gener
 
 • Solo los usuarios registrados pueden calificar un vídeo; después de esto se genera un promedio de calificación.
 
-#Trabajo realizado por:
-#*Castrejon Funes Juan Pablo. #*Baños Servin Paola Lorena.
+*Trabajo realizado por:
+*Castrejon Funes Juan Pablo. #*Baños Servin Paola Lorena.
