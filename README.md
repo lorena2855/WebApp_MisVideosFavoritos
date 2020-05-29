@@ -29,4 +29,5 @@ Desarrollado con el modelo MVC (Modelo – Vista - Controlador) el cual es gener
 • Solo los usuarios registrados pueden calificar un vídeo; después de esto se genera un promedio de calificación.
 
 *Trabajo realizado por:
-*Castrejon Funes Juan Pablo. #*Baños Servin Paola Lorena.
+*Baños Servin Paola Lorena.
+*Castrejon Funes Juan Pablo.
